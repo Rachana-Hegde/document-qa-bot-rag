@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 import chromadb
 from tqdm import tqdm
 from pypdf import PdfReader
@@ -11,6 +12,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not API_KEY:
+    API_KEY = st.secrets["GEMINI_API_KEY"]
 
 DATA_FOLDER = "data"
 

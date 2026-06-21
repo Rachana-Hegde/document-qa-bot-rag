@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 import chromadb
 import google.generativeai as genai
 
@@ -8,6 +9,9 @@ from chromadb.utils.embedding_functions import GoogleGenerativeAiEmbeddingFuncti
 load_dotenv()
 
 API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not API_KEY:
+    API_KEY = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=API_KEY)
 
