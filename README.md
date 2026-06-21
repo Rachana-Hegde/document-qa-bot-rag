@@ -240,4 +240,6 @@ If the requested information is not available in the indexed documents, the bot 
 
 ## Author
 
-**Rachana Hegde[Rachana-Hegde]**
+**Rachana Hegde**
+🔗 GitHub: [https://github.com/Rachana-Hegde](https://github.com/Rachana-Hegde)
+
